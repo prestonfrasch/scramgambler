@@ -1,0 +1,30 @@
+# Define how many players:
+
+
+num_players = int(input("Enter number of players: "))
+
+
+
+# Create a list of player labels:
+
+
+players = [f"Player {i+1}" for i in range(num_players)]
+
+
+# Function to show whose turn it is:
+
+
+def player_turn(player_label):
+
+    print(f"\nIt's {player_label}'s turn!")
+
+    
+    input("Press Enter after your turn...")
+
+    num_players = int(input("Enter number of players: "))
+
+
+players = [f"Player {i+1}" for i in range(num_players)]
+
+for player in players:
+    print(f"\nIt's {player}'s turn!")
